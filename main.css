@@ -1,0 +1,96 @@
+html {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sedanCard {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 450px;
+  width: 325px;
+}
+
+.suvCard {
+  background-color: hsl(184, 100%, 22%);
+  height: 450px;
+  width: 325px;
+}
+
+.luxuryCard {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 450px;
+  width: 325px;
+}
+
+img {
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
+h2 {
+  margin-left: 40px;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 40px;
+}
+
+p {
+  margin: 0;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 30px;
+}
+
+button {
+  margin-left: 40px;
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  border-radius: 50px;
+  width: 140px;
+  height: 45px;
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 10px;
+}
+
+.sedanCard button {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvCard button {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxuryCard button {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 576px) {
+  .card {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .sedanCard {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0px;
+  }
+  
+  .luxuryCard {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 0px;
+  }
+} 
